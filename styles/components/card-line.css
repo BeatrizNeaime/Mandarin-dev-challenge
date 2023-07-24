@@ -1,0 +1,88 @@
+@import url('../root.css');
+
+.content-line {
+  display: flex;
+  width: 90%;
+  gap: 1rem;
+}
+
+.half-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+
+.card-banner {
+  height: 183px;
+  width: 100%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.card-banner--title {
+  font-size: 16px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.card-font {
+  color: #c0bfbf;
+  align-self: flex-start;
+  font-size: 12px;
+}
+
+.content-line:hover {
+  cursor: pointer;
+}
+
+.card--title {
+  font-size: 16px !important;
+}
+
+.banner-margin--left {
+  height: 5px;
+  align-self: flex-start;
+  background: linear-gradient(54deg, var(--light-blue) 27%, var(--purple) 83%);
+  width: 75%;
+}
+
+.banner-margin--right {
+  height: 5px;
+  align-self: flex-start;
+  background: linear-gradient(54deg, var(--light-blue) 27%, var(--aqua-blue) 83%);
+  width: 75%;
+}
+
+/* Media Query for smaller screens */
+
+@media screen and (max-width: 768px) {
+  .content-line {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+
+  .half-card {
+      width: 90% !important;
+  }
+
+  .card-banner {
+      height: auto !important;
+      width: auto;
+  }
+
+  .card-info{
+      width: 100%;
+      align-items: center;
+  }
+
+}

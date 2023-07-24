@@ -1,0 +1,37 @@
+@import url('./root.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.content-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+}
+
+/* Media Query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .content-container{
+        width: 100%;
+    }
+}

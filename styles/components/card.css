@@ -1,0 +1,58 @@
+@import url('../root.css');
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card-banner {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-banner--title {
+    font-size: 22px !important;
+    text-align: left;
+    align-self: flex-start;
+    font-weight: 800;
+}
+
+.card-font {
+    color: #c0bfbf;
+    align-self: flex-start;
+    margin: 10px 0 5px 0;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card-subtitle{
+    color: #c0bfbf;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.banner-margin {
+    height: 5px;
+    align-self: flex-start;
+    background: linear-gradient(54deg, var(--pink) 27%, var(--blue) 83%);
+    width: 50%;
+}
+
+/* Media Query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .card-banner{
+        width: 100% !important;
+    }
+
+}
